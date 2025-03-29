@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Home, Wallet, History, Settings, LogOut } from 'lucide-react';
 import { useAuthStore } from '../store/authStore';
@@ -19,7 +18,7 @@ function Sidebar() {
       <div className="p-6">
         <div className="flex items-center justify-center mb-8">
           <img 
-            src="../dist/assets/putco-logo.png" 
+            src="../dist/assets/putco_logo.jpg" 
             alt="PUTCO Logo" 
             className="h-12"
           />

@@ -2,6 +2,7 @@ import { create } from 'zustand'; // for Zustand state management, to manage aut
 import { createClient, User } from '@supabase/supabase-js'; // Import User type
 
 const supabase = createClient(
+  
   import.meta.env.VITE_SUPABASE_URL,  
   import.meta.env.VITE_SUPABASE_ANON_KEY,
   {
