@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Bell, CreditCard, Shield } from 'lucide-react';
 
 function Settings() {

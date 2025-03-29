@@ -19,7 +19,7 @@ function Sidebar() {
       <div className="p-6">
         <div className="flex items-center justify-center mb-8">
           <img 
-            src="https://raw.githubusercontent.com/stackblitz/stackblitz-images/main/putco-logo.png" 
+            src="../dist/assets/putco-logo.png" 
             alt="PUTCO Logo" 
             className="h-12"
           />

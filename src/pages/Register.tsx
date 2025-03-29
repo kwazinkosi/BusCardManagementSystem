@@ -17,6 +17,7 @@ function Register() {
     }
     catch (err) {
       setError('Registration failed. Please try again.');
+      console.error(err);
     }
   };
 

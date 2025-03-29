@@ -1,4 +1,3 @@
-import React from 'react';
 import { Calendar, MapPin, Bus, Clock } from 'lucide-react';
 
 function History() {

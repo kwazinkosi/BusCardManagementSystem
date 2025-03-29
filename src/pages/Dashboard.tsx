@@ -1,4 +1,3 @@
-import React from 'react';
 import { CreditCard, TrendingUp, Clock, MapPin } from 'lucide-react';
 import BusTracker from '../components/BusTracker';
 
