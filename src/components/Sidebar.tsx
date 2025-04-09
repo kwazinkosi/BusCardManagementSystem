@@ -34,7 +34,7 @@ function Sidebar() {
         <div className="p-6 h-full flex flex-col">
           <div className="flex items-center justify-between mb-8 pb-4 border-b border-navy-600">
             <img 
-              src="../dist/assets/putco_logo1.png" 
+              src="../assets/putco_logo1.png" 
               alt="PUTCO Logo" 
               className="h-12"
             />
