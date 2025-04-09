@@ -36,27 +36,26 @@ function History() {
       passType: 'Monthly Pass'
     },
   ];
-
   return (
-    <div className="max-w-4xl mx-auto">
-      <h2 className="text-2xl font-bold mb-6">Trip History</h2>
+    <div className="max-w-4xl mx-auto md:ml-64 p-6 relative z-0">
+      <h2 className="text-2xl font-bold mt-8 mb-6 md:mb-8">Trip History</h2>
 
       <div className="bg-white rounded-xl shadow-md overflow-hidden">
         <div className="p-6">
           {trips.map((trip) => (
             <div
               key={trip.id}
-              className="border-b border-gray-100 last:border-0 py-6"
+              className="border-b border-gray-100 last:border-0 py-6 hover:bg-gray-50 transition-colors"
             >
-              <div className="flex justify-between items-start mb-4">
-                <div>
-                  <h3 className="font-semibold text-lg">{trip.route}</h3>
+              <div className="flex justify-between items-start mb-4 gap-4">
+                <div className="flex-1">
+                  <h3 className="font-semibold text-lg text-navy-600">{trip.route}</h3>
                   <div className="flex items-center gap-2 text-sm text-gray-500 mt-1">
-                    <Calendar className="h-4 w-4" />
-                    <span>{trip.date}</span>
+                    <Calendar className="h-4 w-4 flex-shrink-0" />
+                    <span className="truncate">{trip.date}</span>
                   </div>
                 </div>
-                <div className="text-right">
+                <div className="text-right min-w-[120px]">
                   <span className="inline-block px-3 py-1 rounded-full bg-green-100 text-green-600 text-sm font-medium">
                     {trip.status}
                   </span>
@@ -67,22 +66,22 @@ function History() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-sm text-gray-600">
-                    <Bus className="h-4 w-4" />
-                    <span>Bus: {trip.busNumber}</span>
+                    <Bus className="h-4 w-4 flex-shrink-0" />
+                    <span className="truncate">Bus: {trip.busNumber}</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm text-gray-600">
-                    <Clock className="h-4 w-4" />
+                    <Clock className="h-4 w-4 flex-shrink-0" />
                     <span>Pass Type: {trip.passType}</span>
                   </div>
                 </div>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-sm text-gray-600">
-                    <MapPin className="h-4 w-4" />
-                    <span>From: {trip.boardingPoint}</span>
+                    <MapPin className="h-4 w-4 flex-shrink-0" />
+                    <span className="truncate">From: {trip.boardingPoint}</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm text-gray-600">
-                    <MapPin className="h-4 w-4" />
-                    <span>To: {trip.alightingPoint}</span>
+                    <MapPin className="h-4 w-4 flex-shrink-0" />
+                    <span className="truncate">To: {trip.alightingPoint}</span>
                   </div>
                 </div>
               </div>

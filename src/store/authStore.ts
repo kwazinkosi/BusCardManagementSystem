@@ -33,7 +33,11 @@ export const useAuthStore = create<AuthState>((set) => ({
       email,
       password,
     });
-    if (error) throw error;
+    if (error) {
+      console.error('Login Error:', error);
+      throw error;
+    }
+    console.log('Login Success:', data);
     set({ user: data.user, isAuthenticated: true });
     
   },

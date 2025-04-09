@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 //import { Wallet, CreditCard, History as HistoryIcon, Map, Settings as SettingsIcon, LogOut } from 'lucide-react';
 import Navbar from './components/Navbar';

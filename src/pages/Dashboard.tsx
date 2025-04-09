@@ -43,9 +43,9 @@ function Dashboard() {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto">
-      <h2 className="text-2xl font-bold mb-6">Dashboard</h2>
-      
+    
+      <div className="max-w-6xl mx-auto md:ml-64 p-6 relative z-0">
+      <h2 className="text-2xl font-bold my-6">Dashboard</h2>
       {/* Active Pass Status */}
       <div className="bg-white rounded-xl shadow-md p-6 mb-8">
         <div className="flex items-center gap-4 mb-4">
@@ -95,7 +95,8 @@ function Dashboard() {
       </div>
 
       {/* Bus Tracker */}
-      <div className="mb-8">
+      
+      <div className="mb-8 relative z-10" style={{ minHeight: '500px' }}>
         <BusTracker />
       </div>
 
