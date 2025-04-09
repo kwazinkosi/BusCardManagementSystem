@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Home, Wallet, History, Settings, LogOut, Menu, X } from 'lucide-react';
 import { useAuthStore } from '../store/authStore';
 import { useState } from 'react';
+import putcoLogo from '../assets/putco_logo1.png';
 
 function Sidebar() {
   const location = useLocation();
@@ -34,7 +35,7 @@ function Sidebar() {
         <div className="p-6 h-full flex flex-col">
           <div className="flex items-center justify-between mb-8 pb-4 border-b border-navy-600">
             <img 
-              src="../assets/putco_logo1.png" 
+              src={putcoLogo}
               alt="PUTCO Logo" 
               className="h-12"
             />
